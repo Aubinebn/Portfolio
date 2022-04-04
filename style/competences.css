@@ -1,0 +1,154 @@
+/* cadres */
+#haut{
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#haut>div.box{
+    width: 32vw;
+}
+
+.box{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    border-radius: 80px;
+    padding: 2% 3% 4% 3%;
+    background-color: #575757;
+    box-shadow: 0 2px 4px 1px rgb(0 0 0 / 14%), 0 3px 14px 8px rgb(0 0 0 / 35%), 0 5px 5px -3px rgb(0 0 0 / 20%);
+}
+
+#bas{
+    margin-top: 12vh;
+    margin-bottom: 5vh;
+    padding: 2% 8% 2% 8%;
+}
+#bas>p{
+    height: 2vh;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+/* Skills bar */
+
+
+.competence{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 15%;
+}
+.competence:first-child{
+    margin-top: 5vh;
+}
+.level {
+    height: 1.8vh;
+    width: 50%;
+    background: #f0f0f0;
+    position: relative;
+    margin-left: 2vw;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05), 0 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+    @keyframes animate {
+    100%{
+    transform: scaleX(1);
+    }
+}
+.level>span{
+    height: 2vh;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #61D2EF;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.logo>img{
+    width: 4.5vw;
+}
+    /* level */
+        /* language */
+.html>span{
+    width: 85%;
+}
+.css>span{
+    width: 70%;
+}
+.js>span{
+    width: 45%;
+}
+.php>span{
+    width: 70%;
+}
+
+    /* logiciels */
+.wordpress>span{
+    width: 59%;
+}
+.illustrator>span{
+    width: 68%;
+}
+.xd>span{
+    width: 53%;
+}
+.office>span{
+    width: 80%;
+}
+.git>span{
+    width:  35%;
+}
+
+
+/* Media query */
+    /*900px -> 1200px*/
+
+@media only screen and (max-width: 1200px){
+
+}
+        
+    /*430 -> 900px*/
+
+@media only screen and (max-width: 900px){
+    div.box{
+        border-radius: 50px;
+    }
+    #haut{
+        flex-direction: column;
+        gap: 10vh;
+        margin-top: 9vh;
+    }
+}
+    
+    /*-> 430*/
+    
+@media only screen and (max-width: 425px){
+    #haut{
+        flex-direction: column;
+        gap: 10vh;
+    }
+    #haut>div.box{
+        width: 70vw;
+    }
+    .level{
+        height: 8px;
+    }
+    .level>span{
+        height: 9px;
+    }
+    .logo>img{
+        width: 8vw;
+    }
+
+    #bas{
+        font-size: smaller;
+    }
+}

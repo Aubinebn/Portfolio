@@ -1,0 +1,128 @@
+::-webkit-scrollbar {
+    width: 0vw;
+  }
+
+/* Margin */
+
+body{
+    margin: 0 11vw 0 11vw;
+}
+
+/* Font and colors */
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+body{
+    background: rgb(119,191,209);
+    background: linear-gradient(90deg, rgb(20, 81, 97) 0%, rgb(66, 156, 172) 100%);
+    text-align: justify;
+}
+body,h2{
+    font-family: Montserrat;
+    font-size: 1.3rem;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.light{
+    font-size: 1.2rem;
+    line-height: 170%;
+    font-weight: normal;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.blue{
+    color: #61D2EF;
+}
+
+.orange{
+    color:#FFA35D;
+}
+
+.yellow{
+    color: #FFDA5E
+}
+
+/*  HEADER  */
+
+header{
+    position: fixed;
+    z-index: 20;
+    top: 5%;
+    width: 78vw;
+    height: 10vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header > div{
+    border-radius: 80px;
+    padding: 0.7em 2em;
+}
+
+header>div:first-of-type{
+    background-color: rgba(255, 255, 255, 0.87);
+    box-shadow: 0 2px 4px 1px rgb(0 0 0 / 14%), 0 3px 14px 3px rgb(0 0 0 / 1%), 0 5px 5px -3px rgb(0 0 0 / 20%);
+}
+header>div:first-of-type>a{
+    display: flex;
+    color: black;
+}
+img.arrow{
+    width: 10%;
+    height: 10%;
+    transform: rotate(-90deg);
+    margin: auto;
+}
+
+
+header>div:last-of-type{
+    background-color: #575757;
+    padding-right: 4em;
+    color: white;
+    box-shadow: 0 2px 4px 1px rgb(0 0 0 / 14%), 0 3px 14px 8px rgb(0 0 0 / 35%), 0 5px 5px -3px rgb(0 0 0 / 20%);
+
+}
+header>div>a:hover{
+    font-weight: 700;
+}
+
+
+/* Media query */
+    /*900px -> 1200px*/
+
+@media only screen and (max-width: 1200px){
+    body{
+        font-size: 1rem;
+    }
+    .light{
+        font-size: 0.9rem;
+    }
+}
+
+/*-> 900px*/
+
+@media only screen and (max-width: 900px){
+    header{
+        display: block;
+        position: relative;
+        top: 15vh;
+    }
+
+    header>div:first-of-type{
+        position: fixed;
+        top: 2vh;
+    }
+}

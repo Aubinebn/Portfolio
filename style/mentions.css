@@ -1,0 +1,13 @@
+main{
+    position: relative;
+    top: 27vh;
+    width: 50vw;
+    border-radius: 80px;
+    background-color: #575757;
+    box-shadow: 0 2px 4px 1px rgb(0 0 0 / 14%), 0 3px 14px 8px rgb(0 0 0 / 35%), 0 5px 5px -3px rgb(0 0 0 / 20%);
+    margin: auto;
+    padding: 2% 8% 2% 8%;
+    display: flex;
+    flex-flow: column; 
+    justify-content: space-evenly;
+}
